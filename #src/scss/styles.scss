@@ -1,0 +1,33 @@
+// @import "normalize";
+@import "bootstrap3";
+
+// Fonts
+
+@mixin font($font_name, $file_name, $weight, $style) {
+@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+@import "fonts";
+
+
+// Styles
+
+$color-first: #80C52E;
+$color-second: #FE8A01;
+$color-telegram: #3ACDED;
+$color-whatsapp: #43E75D;
+
+$color-text: #454545;
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+
